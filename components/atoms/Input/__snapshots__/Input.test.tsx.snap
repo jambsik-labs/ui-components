@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input test Should render component without errors 1`] = `
+<div>
+  <input
+    class="css-1y7h7x1"
+  />
+</div>
+`;

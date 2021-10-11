@@ -1,0 +1,13 @@
+.idea
+/idea
+
+node_modules
+build
+storybook-static
+
+.DS_Store
+.env
+
+firebase-debug.log
+
+coverage

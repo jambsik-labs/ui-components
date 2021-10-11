@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button test Should render component without errors 1`] = `
+<div>
+  <button
+    class="css-1hyo902-Button"
+  />
+</div>
+`;
