@@ -1,11 +1,13 @@
 import { roboto } from '@theme-ui/presets';
-import { mediumEmerald, yellow } from './colors';
+import { mediumLightBlue, yellow } from './colors';
 import { Theme } from '@theme-ui/css';
 
 export const copdTheme: Theme = {
     ...roboto,
     colors: {
         primary: yellow,
+        secondary: mediumLightBlue,
+        accent: '#fff',
     },
     buttons: {
         primary: {
@@ -17,7 +19,7 @@ export const copdTheme: Theme = {
         ...roboto.styles,
         root: {
             ...roboto.styles.root,
-            color: yellow,
+            color: 'black',
         },
     },
 };

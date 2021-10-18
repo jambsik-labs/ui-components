@@ -1,14 +1,24 @@
 /** @jsxImportSource theme-ui */
 
-import { ThemeProvider, Label } from 'theme-ui';
+import { Label, ThemeProvider } from 'theme-ui';
 import { useState } from 'react';
 
 import { Button, copdTheme, saTheme } from '../../components';
 import { ThemeName } from '../../constants/ThemeName';
+import { darkTheme } from '../../components/theme/dark.theme';
 
 export const withProviderDecorator = (Story) => {
     const STORYBOOK_KEY = '@storybook/theme';
-    const getTheme = (themeName: ThemeName | string) => (themeName === ThemeName.SA ? saTheme : copdTheme);
+    const getTheme = (themeName: ThemeName | string) => {
+        switch (themeName) {
+            case ThemeName.SA:
+                return saTheme;
+            case ThemeName.COPD:
+                return copdTheme;
+            case ThemeName.Dark:
+                return darkTheme;
+        }
+    };
 
     const [theme, setTheme] = useState<ThemeName | string>(() => window.localStorage.getItem(STORYBOOK_KEY));
     const layout = {
@@ -28,7 +38,7 @@ export const withProviderDecorator = (Story) => {
         marginLeft: '8px',
     };
 
-    const availableThemes = [ThemeName.SA, ThemeName.COPD];
+    const availableThemes = [ThemeName.SA, ThemeName.COPD, ThemeName.Dark];
 
     const onChangeTheme = (themeName: ThemeName) => {
         window.localStorage.setItem(STORYBOOK_KEY, themeName);
