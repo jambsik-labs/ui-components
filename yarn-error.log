@@ -1,14 +1,14 @@
 Arguments: 
-  /Users/john/.nvm/versions/node/v14.18.0/bin/node /usr/local/Cellar/yarn/1.22.5/libexec/bin/yarn.js add @jambsik-labs/ui-components
+  /Users/john/.nvm/versions/node/v14.18.1/bin/node /usr/local/Cellar/yarn/1.22.5/libexec/bin/yarn.js add @jambsik-labs/ui-components@latest
 
 PATH: 
-  /Users/john/.nvm/versions/node/v14.18.0/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/john/Documents/jambsik-labs/node_modules/.bin
+  /Users/john/.nvm/versions/node/v14.18.1/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
 
 Yarn version: 
   1.22.5
 
 Node version: 
-  14.18.0
+  14.18.1
 
 Platform: 
   darwin x64
@@ -29,7 +29,7 @@ Trace:
 npm manifest: 
   {
       "name": "@jambsik-labs/ui-components",
-      "version": "1.1.2",
+      "version": "1.1.0",
       "description": "Design system methodology lib for create reusable components ",
       "main": "./build/index.js",
       "module": "./build/index.es.js",
@@ -59,8 +59,11 @@ npm manifest:
       },
       "homepage": "https://github.com/jambsik-labs/ui-components#readme",
       "peerDependencies": {
+          "@theme-ui/presets": "^0.11.3",
+          "@types/theme-ui": "^0.6.0",
           "react": "17.0.2",
-          "react-dom": "17.0.2"
+          "react-dom": "17.0.2",
+          "theme-ui": "^0.11.3"
       },
       "devDependencies": {
           "@babel/core": "7.15.8",
@@ -75,6 +78,7 @@ npm manifest:
           "@storybook/addon-links": "6.3.10",
           "@storybook/react": "6.3.10",
           "@testing-library/react": "^12.1.2",
+          "@theme-ui/presets": "^0.11.3",
           "@types/jest": "27.0.2",
           "@types/node": "16.10.3",
           "@types/react": "17.0.27",
@@ -90,7 +94,7 @@ npm manifest:
           "eslint-plugin-react": "7.26.1",
           "husky": "7.0.0",
           "jest": "27.2.5",
-          "prettier": "2.4.1",
+          "prettier": "^2.4.1",
           "pretty-quick": "3.1.1",
           "react": "17.0.2",
           "react-dom": "17.0.2",
@@ -98,13 +102,11 @@ npm manifest:
           "rollup-plugin-peer-deps-external": "2.2.4",
           "rollup-plugin-typescript2": "0.30.0",
           "storybook-dark-mode": "1.0.8",
+          "theme-ui": "^0.11.3",
           "ts-jest": "27.0.5",
           "typescript": "4.4.3"
       },
-      "dependencies": {
-          "@theme-ui/presets": "^0.11.3",
-          "theme-ui": "^0.11.3"
-      }
+      "dependencies": {}
   }
 
 yarn manifest: 
@@ -9888,7 +9890,7 @@ Lockfile:
     dependencies:
       fast-diff "^1.1.2"
   
-  prettier@2.4.1:
+  prettier@2.4.1, prettier@^2.4.1:
     version "2.4.1"
     resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.4.1.tgz#671e11c89c14a4cfc876ce564106c4a6726c9f5c"
     integrity sha512-9fbDAXSBcc6Bs1mZrDYb3XKzDLm4EXXL9sC1LqKP5rZkT6KRr/rf9amVUcODVXgguK/isJz0d0hP72WeaKWsvA==

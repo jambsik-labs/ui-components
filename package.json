@@ -8,6 +8,9 @@
     "engines": {
         "node": ">=14.18.0"
     },
+    "publishConfig": {
+        "access": "public"
+    },
     "files": [
         "build"
     ],
