@@ -1,6 +1,6 @@
 {
     "name": "@jambsik-labs/ui-components",
-    "version": "1.3.0",
+    "version": "1.4.0",
     "description": "Design system methodology lib for create reusable components ",
     "main": "./build/index.js",
     "module": "./build/index.es.js",
